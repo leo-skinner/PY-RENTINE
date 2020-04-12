@@ -3,11 +3,11 @@ import time
 name = input("What is your name? ")
 time.sleep(1)
 
-welcome = "Hello "+name+"!"
+welcome = 'Hello {}! Nice to meet you!'.format(name)
 print(welcome)
 time.sleep(1)
 
-age = int(input(name + ", how old are you?"))
+age = int(input('{}, how old are you? '.format(name)))
 time.sleep(1)
 
 if age > 30:
@@ -23,4 +23,8 @@ print("Thinking...")
 time.sleep(1)
 result = num1+num2
 
-print("The sum between "+str(num1)+" and "+str(num2)+" is"+str(result))
+print('The sum between {} and {} is {}'.format(num1, num2, result))
+time.sleep(1)
+word = input('{}, please type any word: '.format(name))
+print('Thinking...')
+time.sleep(1)
